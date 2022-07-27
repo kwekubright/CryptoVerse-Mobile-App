@@ -63,7 +63,3 @@ Give a ⭐️ if you like this project!
 
 - All API used in project were from CoinGecko ♥️
 - Inspiration and design from [Microverse Bootcamp](https://www.microverse.org/)
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
