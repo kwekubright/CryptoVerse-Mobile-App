@@ -9,7 +9,7 @@ const NavBar = (props) => {
   const { page } = props;
 
   return (
-    <Navbar variant="dark" className="cv-nav" fixed="top">
+    <Navbar id="navbar" variant="dark" className="cv-nav" fixed="top">
       <Container>
         {/* add back arrow */}
 
@@ -18,11 +18,9 @@ const NavBar = (props) => {
             <FontAwesomeIcon
               icon={solid('chevron-left')}
               className="me-2"
-              onClick={
-              () => {
+              onClick={() => {
                 window.history.back();
-              }
-            }
+              }}
             />
           ) : (
             ''
