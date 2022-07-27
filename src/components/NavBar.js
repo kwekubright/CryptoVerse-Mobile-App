@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import './NavBar.css';
 import { PropTypes } from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { solid } from '@fortawesome/fontawesome-svg-core/import.macro';
 
 const NavBar = (props) => {
   const { page } = props;
@@ -13,11 +15,23 @@ const NavBar = (props) => {
 
         <Navbar.Brand href="#home" className="fw-bold">
           {page !== 'Home' ? (
-            <span className="nav-back">
-              <i className="fas fa-chevron-left" />
-            </span>
-          ) : null}
-          { page === 'Home' ? 'CryptoVerse' : page }
+            <FontAwesomeIcon
+              icon={solid('chevron-left')}
+              className="me-2"
+              onClick={
+              () => {
+                window.history.back();
+              }
+            }
+            />
+          ) : (
+            ''
+          )}
+          {page === 'Home' ? 'CryptoVerse' : page}
+        </Navbar.Brand>
+        <Navbar.Brand>
+          <FontAwesomeIcon icon={solid('microphone')} className="me-2" />
+          <FontAwesomeIcon icon={solid('gear')} className="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
       </Container>
