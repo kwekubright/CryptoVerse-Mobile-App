@@ -5,7 +5,7 @@
 > The application will allow users to filter a list of crypto assets and view detail. If you are a crypto lover, you can use this app to stay updated on current prices and market cap.
 
 ## Presentation
-[Click here to watch my presentation](https://www.loom.com/share/ecfa74659b8e441781ca0378fd4337b4)
+[Click here to watch my presentation](https://www.loom.com/share/ecfa74659b8e441781ca0378fd4337b4) | 
 [Click here for live demo](https://62e1463c4c84cd27a8ed2f61--ephemeral-jalebi-c9b606.netlify.app/)
 
 
