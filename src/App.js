@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+/* eslint-disable import/extensions */
+import { Outlet } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
+import NavBar from './components/NavBar';
+import { fetchCurrencyList } from './redux/currencySlice';
 
 function App() {
+  const dispatch = useDispatch();
+  const currencyState = useSelector((state) => state.currency);
+  const pageName = useSelector((state) => state.pageName);
+
+  useEffect(() => {
+    if (currencyState.status === 'idle') {
+      dispatch(fetchCurrencyList());
+    }
+  }, [
+    dispatch,
+    currencyState.status,
+  ]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar page={pageName.pageName} />
+      <Outlet />
+    </>
   );
 }
 
