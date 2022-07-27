@@ -49,7 +49,7 @@ const Details = () => {
                 }`}
               </Alert>
               <Alert variant="info">
-                Circulating Suply:
+                Circulating Supply:
                 {' '}
                 {`${
                   details.circulating_supply !== undefined
