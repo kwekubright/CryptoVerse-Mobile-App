@@ -26,7 +26,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Git
 - Code Editor
 
-## Insall
+## Install
 
 Run the following command to get a working version locally
 
@@ -62,4 +62,5 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - All API used in project were from CoinGecko ♥️
-- Inspiration and design from [Microverse Bootcamp](https://www.microverse.org/)
+- Inspiration for design Nelson Sakwa (https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
+- Thank you [Microverse Bootcamp](https://www.microverse.org/)
